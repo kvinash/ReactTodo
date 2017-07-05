@@ -3,6 +3,7 @@ import React, { Component, Button } from 'react';
 import logo from './logo.svg';
 
 import './App.css';
+import './bootstrap.css';
 import './react-bootstrap-table-all.min.css';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 //<script src="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table.min.js"></script>
