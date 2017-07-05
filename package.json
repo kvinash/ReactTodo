@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
+    "react-bootstrap-table": "^3.4.3",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "underscore": "^1.8.3"
   },
   "scripts": {
     "start": "react-scripts start",

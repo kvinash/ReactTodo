@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import 'react-bootstrap-table-all.min.css';
 class App extends Component {
   addTodo(event){
    console.log(event)
