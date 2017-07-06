@@ -17,7 +17,7 @@ class Apptable extends Component {
             products: [],
             title: 'React first working App.',
             counter: 0,
-            editCount:0,
+            itCount:0,
             showList: true,
             showUpdate: false
         }
@@ -59,14 +59,23 @@ class Apptable extends Component {
 
         };
         let products = this.state.products;
-        products.splice(counter-1,1,product)
+        products.forEach(function (prod, index) {
+            console.log(prod.counter,prod, counter,product);
+            if (prod.counter === counter) {
+                /**ES6 solution to copy one object to another */
+                Object.assign(prod, product);
+                prod == product;
+            }
+        })
+           
+        //products.splice(counter-1,1,product)
         console.log(products)
         //products.push(product);
         this.setState({
             showList: true,
             showUpdate: false,
-            products: products
-            
+            products: products,
+            editCount:0
         })
         this.refs.productForm.reset()
     }
@@ -76,6 +85,13 @@ class Apptable extends Component {
         let products = this.state.products;
         products = products.filter((product) => { return product.counter !== index })
         this.setState({ products: products })
+        this.setState({
+            showList: true,
+            showUpdate: false,
+            products: products,
+            editCount:0
+        })
+        this.refs.productForm.reset()
     }
     /**To edit the input text*/
     editPro(index) {
