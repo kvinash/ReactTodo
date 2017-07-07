@@ -6,8 +6,13 @@
     "react": "^15.6.1",
     "react-bootstrap-table": "^3.4.3",
     "react-dom": "^15.6.1",
+    "react-progress": "0.0.12",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
-    "underscore": "^1.8.3"
+    "superagent": "^3.5.2",
+    "underscore": "^1.8.3",
+    "whatwg-fetch": "^2.0.3"
   },
   "scripts": {
     "start": "react-scripts start",

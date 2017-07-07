@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
-import Apptable from './Apptable';
+//import Apptable from './Apptable';
+import AppApi from './AppApi';
+import RouteBasic from './RouteBasic';
 import registerServiceWorker from './registerServiceWorker';
-
-ReactDOM.render(<Apptable />, document.getElementById('root'));
+import ModalSwitch from './ModalGallery';
+ReactDOM.render(<RouteBasic />, document.getElementById('root'));
 registerServiceWorker();
